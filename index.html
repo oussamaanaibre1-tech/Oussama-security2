@@ -1,19 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Oussama Security - Caméras Rabat</title>
+<title>Oussama Security - Installation Caméras Rabat</title>
 <style>
 body{margin:0;font-family:Arial;background:#f4f7fb}
-header{background:#0a1931;color:#fff;padding:10px 5%;display:flex;justify-content:space-between;align-items:center}
+header{background:#0a1931;padding:10px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
 header img{height:60px;background:#fff;border-radius:10px;padding:5px}
 .btn{background:#ffc107;color:#000;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:900}
 .hero{background:linear-gradient(rgba(10,25,49,.9),rgba(10,25,49,.9)),url(https://images.unsplash.com/photo-1557597774-9d273605dfa9);background-size:cover;color:#fff;text-align:center;padding:80px 6%}
-.grid{padding:40px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.grid{padding:30px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
 .card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.1)}
-.card img{width:100%;height:180px;object-fit:cover}
+.card img{width:100%;height:200px;object-fit:cover}
 .card div{padding:15px}
 .contact{background:#0a1931;color:#fff;text-align:center;padding:50px 5%}
+
+/* زر واتساب كيتحرك */
+.wa-float{position:fixed;bottom:25px;right:25px;width:65px;height:65px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,.4);z-index:999;animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,211,102,.7)}70%{transform:scale(1.1);box-shadow:0 0 0 15px rgba(37,211,102,0)}100%{transform:scale(1);box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.works{padding:40px 5%;background:#fff}
+.works h2{text-align:center;margin-bottom:20px;color:#0a1931}
 </style>
 </head>
 <body>
@@ -21,22 +28,41 @@ header img{height:60px;background:#fff;border-radius:10px;padding:5px}
 <img src="WhatsApp Image 2026-10-19 at 22.23.08.jpg" alt="Oussama Security">
 <a class="btn" href="https://wa.me/212678034043">Devis Gratuit</a>
 </header>
+
 <div class="hero">
 <h1>Installation <span style="color:#ffc107">Caméras de Surveillance</span> à Rabat</h1>
 <p style="margin:20px 0;font-size:18px">Alarme • Incendie • Pointage • Contrôle d'accès</p>
-<a class="btn" href="tel:+212678034043">📞 06 78 03 40 43</a>
+<a class="btn" href="tel:+212678034043">📞 06 78 03 40 43 - Appeler</a>
 <p style="margin-top:15px">Rabat - Salé - Témara - Kénitra - Casa</p>
 </div>
+
 <div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1582139329536-5a0d5f1c4b6a"><div><h3>📹 Caméras HD</h3><p>Vision nocturne + accès téléphone 24/24</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1582139329536-5a0d5f1c4b6a"><div><h3>📹 Caméras HD</h3><p>Vision nocturne + accès téléphone</p></div></div>
 <div class="card"><img src="https://images.unsplash.com/photo-1558002038-1055907df827"><div><h3>🚨 Alarme</h3><p>Protection maison, villa, commerce</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3"><div><h3>🔐 Contrôle d'accès</h3><p>Badge, empreinte, pointage employés</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3"><div><h3>🔐 Contrôle d'accès</h3><p>Badge, empreinte, pointage</p></div></div>
 </div>
+
+<!-- بلاصة تصاور خدمتك -->
+<div class="works">
+<h2>📸 Nos Réalisations à Rabat</h2>
+<p style="text-align:center;margin-bottom:25px;color:#555">Voici quelques installations réalisées par Oussama Security</p>
+<div class="grid">
+<div class="card"><img src="work1.jpg" onerror="this.src='https://images.unsplash.com/photo-1558002038-1055907df827'"><div><p>Installation Villa - Rabat</p></div></div>
+<div class="card"><img src="work2.jpg" onerror="this.src='https://images.unsplash.com/photo-1582139329536-5a0d5f1c4b6a'"><div><p>Commerce - Salé</p></div></div>
+<div class="card"><img src="work3.jpg" onerror="this.src='https://images.unsplash.com/photo-1563013544-824ae1b704d3'"><div><p>Bureau - Témara</p></div></div>
+<div class="card"><img src="work4.jpg" onerror="this.src='https://images.unsplash.com/photo-1557597774-9d273605dfa9'"><div><p>Dépôt - Kénitra</p></div></div>
+</div>
+</div>
+
 <div class="contact">
 <h2 style="color:#ffc107">Oussama Security</h2>
 <h1>+212 678 03 40 43</h1>
-<p>Devis gratuit - Garantie - SAV rapide</p><br>
+<p>Devis gratuit - Garantie 1 an - SAV rapide</p><br>
 <a class="btn" href="https://wa.me/212678034043">WhatsApp Maintenant</a>
 </div>
+
+<!-- زر واتساب كيتحرك -->
+<a class="wa-float" href="https://wa.me/212678034043?text=Salam%20Oussama%20bghit%20devis%20camera">W</a>
+
 </body>
 </html>
